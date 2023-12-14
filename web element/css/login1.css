@@ -1,0 +1,49 @@
+body{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+h1 {
+    text-align: center;
+  
+}
+
+.container{
+    max-width: 400;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    padding-right: 50px;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+}
+
+.account{
+    text-decoration: none;
+}

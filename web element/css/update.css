@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: lightgray;
   }
-
+  
   header {
     background: #4CAF50;
     padding: 20px;
@@ -44,11 +44,13 @@ body {
     border-radius: 20px;
   }
 
+  
   .register-form label {
     display: block;
     margin-bottom: 10px;
   }
   
+
   .form-element{
     width: 100%;
     padding: 10px;

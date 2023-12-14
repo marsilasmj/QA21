@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/home.css">
+  <title>Home Page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Online Registration</a></li>
+        <li class="login-btn" style="float: right;"><a href="Login.html">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="user-list">
+      <h2>Registered Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>View</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JohnDoe</td>
+            <td>john.doe@example.com</td>
+            <td>Administrator</td>
+            <td><a href="view_detail.html" class="btn-view" >View</a></td>
+            <td><a href="update.html" class="btn-update">Update</a></td>
+            <td><button class="btn-delete">Delete</button></td>
+          </tr>
+          <tr>
+            <td>JaneSmith</td>
+            <td>jane.smith@example.com</td>
+            <td>User</td>
+            <td><a href="view_detail.html" class="btn-view" >View</a></td>
+            <td><a href="update.html" class="btn-update">Update</a></td>
+            <td><button class="btn-delete">Delete</button></td>
+          </tr>
+          <!-- Add more rows for each registered user -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2021 QA-Test-Tool. All rights reserved.</p>
+  </footer>
+</body>
+</html>
