@@ -4,7 +4,7 @@ describe( 'Checkbox Tests',  () => {
     cy.get('#gridCheck1').check();
     cy.get('#gridCheck2').should('be.checked')
     cy.get('#gridCheck3').uncheck();
-    cy.get('#gridCheck4').should('not.be.check')
+    cy.get('#gridCheck4').should('be.checked')
    })
     
     it('should check multiple checkboxes' , function (){

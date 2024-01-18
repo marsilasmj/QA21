@@ -1,0 +1,8 @@
+Note:-
+get methods: gets one or more elements based on the selector passed as aparameter
+contains methods:- Another way to locate things is to look them up by their content,
+Cypress uses to chain commands together. 
+find methods:- always chains with other methods that return DOM elements.
+.first(): This method selects the first element in the collection of elements matched by the preceding command.
+.last(): This method selects the last element in the collection of elements matched by the preceding command
+.eq(index): This method selects the element at the specified index within the collection of elements matched by the preceding command. The index is zero-based, so .eq(0) selects the first element,
