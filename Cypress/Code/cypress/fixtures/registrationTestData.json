@@ -1,0 +1,111 @@
+
+{
+    "TestCase1": {
+      "firstName": "1234@34",
+      "lastName": "Smith",
+      "username": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phoneNumber": "+1234567890",
+      "dateOfBirth": "1990-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    },
+    "TestCase2": {
+      "firstName": "John",
+      "lastName": "12321@@##$",
+      "username": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phoneNumber": "+1234567890",
+      "dateOfBirth": "1990-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    },
+    "testCase3": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "1234@#@ ",
+      "email": "johnsmith@example.com",
+      "phoneNumber": "+1234567890",
+      "dateOfBirth": "1990-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    },
+    "TestCase4": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phoneNumber": "123",
+      "dateOfBirth": "1990-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    },
+    "testCase5": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phoneNumber": "+1234567890",
+      "dateOfBirth": "2022-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    },
+    "TestCase6": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "test",
+      "email": "johnsmith@example.com",
+      "phoneNumber": "+1234567890",
+      "dateOfBirth": "1990-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    },
+    "testCase7": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "johnsmith",
+      "email": "efremyohanis116@gamil.com",
+      "phoneNumber": "+1234567890",
+      "dateOfBirth": "1990-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    },
+    "TestCase8": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phoneNumber": "+1234567890",
+      "dateOfBirth": "1990-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    },
+    "TestCase9": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "johnsmith",
+      "email": "johnsmith@example.com",
+      "phoneNumber": "+1234567890",
+      "dateOfBirth": "1990-01-01",
+      "address": "123 Main Street, City, State, Country",
+      "password": "P@ssw0rd",
+      "confirmPassword": "P@ssw0rd",
+      "role": "User"
+    }
+  }

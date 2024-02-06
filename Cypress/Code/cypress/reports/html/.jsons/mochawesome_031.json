@@ -1,0 +1,263 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-04T14:08:35.355Z",
+    "end": "2024-02-04T14:08:40.347Z",
+    "duration": 4992,
+    "testsRegistered": 8,
+    "passPercent": 12.5,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 6,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "af0aaa8a-21da-4ff6-9fd9-00bc46067b95",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Project\\Code Optimaztion\\Testing home page.cy.js",
+      "file": "cypress\\e2e\\Project\\Code Optimaztion\\Testing home page.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4d8f3036-d077-472e-97f5-1e4f7bccaa5d",
+          "title": "Testing home page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Redirects unauthenticated user to login page",
+              "fullTitle": "Testing home page Redirects unauthenticated user to login page",
+              "timedOut": null,
+              "duration": 1606,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Project\\\\Code Optimaztion\\\\Testing home page.cy.js\"\n}",
+              "code": "cy.visit(\"https://end-to-end-v1.onrender.com/home/\");\ncy.contains(\"Log In\").should(\"be.visible\"); // Verify if the 'Log In' button is visible\ncy.contains(\"Username:\").should(\"be.visible\"); // Verify if the 'Username:' label is visible\ncy.contains(\"Password:\").should(\"be.visible\"); // Verify if the 'Password:' label is visible\ncy.contains(\"Create account\").should(\"be.visible\"); // Verify if the 'Create account' link is visible",
+              "err": {},
+              "uuid": "30bd2bf2-f0b2-49c9-b513-aac3570c69a4",
+              "parentUUID": "4d8f3036-d077-472e-97f5-1e4f7bccaa5d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "30bd2bf2-f0b2-49c9-b513-aac3570c69a4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1606,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6bee01e6-5e1d-4988-ac53-62c01d198e25",
+          "title": "Testing home page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that the home page displays a list of registered users with the correct columns.",
+              "fullTitle": "Testing home page Verify that the home page displays a list of registered users with the correct columns.",
+              "timedOut": null,
+              "duration": 165,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Project\\\\Code Optimaztion\\\\Testing home page.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Project\\\\Code Optimaztion\\\\Testing home page.cy.js\\\\Testing home page -- Verify that the home page displays a list of registered users with the correct columns -- before each hook login before each test case (failed).png\",\n        \"\\\\Project\\\\Code Optimaztion\\\\Testing home page.cy.js\\\\Testing home page -- Verify that the home page displays a list of registered users with the correct columns -- after each hook logout after each test case (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// Step 4: Access the home page URL\ncy.url().should(\"include\", \"/home\");\n// Verify the table columns\ncy.get(\"table\").should(\"be.visible\");\ncy.get(\"th\").should(\"have.length\", 6);\ncy.contains(\"Username\").should(\"be.visible\");\ncy.contains(\"Email\").should(\"be.visible\");\ncy.contains(\"Role\").should(\"be.visible\");\ncy.contains(\"View\").should(\"be.visible\");\ncy.contains(\"Update\").should(\"be.visible\");\ncy.contains(\"Delete\").should(\"be.visible\");",
+              "err": {
+                "message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.xpath()`\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Testing home page`",
+                "estack": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.xpath()`\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Testing home page`\n    at isElement (https://end-to-end-v1.onrender.com/__cypress/runner/cypress_runner.js:145181:58)\n    at validateType (https://end-to-end-v1.onrender.com/__cypress/runner/cypress_runner.js:145030:14)\n    at Object.isType (https://end-to-end-v1.onrender.com/__cypress/runner/cypress_runner.js:145061:7)\n    at $Cy.pushSubject (https://end-to-end-v1.onrender.com/__cypress/runner/cypress_runner.js:138705:22)\n    at wrapped (https://end-to-end-v1.onrender.com/__cypress/runner/cypress_runner.js:138265:19)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress/./cypress/e2e/Project/Code Optimaztion/Testing home page.cy.js:23:49)",
+                "diff": null
+              },
+              "uuid": "13e13042-0d7f-4c59-9ce1-1688224ec526",
+              "parentUUID": "6bee01e6-5e1d-4988-ac53-62c01d198e25",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that clicking on the View link/button navigates to the user's detailed information page.",
+              "fullTitle": "Testing home page Verify that clicking on the View link/button navigates to the user's detailed information page.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//click on view button.\ncy.xpath(\"//tbody/tr[1]/td[4]/a[1]\").click();\ncy.url().should(\"include\", \"https://end-to-end-v1.onrender.com/view_detail/\");",
+              "err": {},
+              "uuid": "af8f86ac-c7c4-4705-9a52-8969790600b7",
+              "parentUUID": "6bee01e6-5e1d-4988-ac53-62c01d198e25",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify that clicking on the Update link/button navigates to the user's information update page.",
+              "fullTitle": "Testing home page Verify that clicking on the Update link/button navigates to the user's information update page.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//click on view button.\ncy.xpath(\"//tbody/tr[1]/td[5]/a[1]\").click();\ncy.url().should(\"include\", \"https://end-to-end-v1.onrender.com/update/\");",
+              "err": {},
+              "uuid": "00214528-564d-4c2e-aef6-4c4428581728",
+              "parentUUID": "6bee01e6-5e1d-4988-ac53-62c01d198e25",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify that clicking on the Delete link/button deletes the user from the system.",
+              "fullTitle": "Testing home page Verify that clicking on the Delete link/button deletes the user from the system.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//click on view button.\ncy.xpath(\"//tbody/tr[1]/td[6]/a[1]\").click();\ncy.xpath(\"//div[@class='alert success']\").should(\"have.text\", \"User deleted successfully.\");",
+              "err": {},
+              "uuid": "05e582b6-29a2-4682-be7f-f7b9fc20bdd4",
+              "parentUUID": "6bee01e6-5e1d-4988-ac53-62c01d198e25",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify that clicking on the QA-Test-Tool link in the navigation menu refreshes the home page.",
+              "fullTitle": "Testing home page Verify that clicking on the QA-Test-Tool link in the navigation menu refreshes the home page.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// click on QA-Test-Tool\ncy.xpath(\"//a[normalize-space()='QA-Test-Tool']\").click();\n// assertion about the URL\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/home/\");",
+              "err": {},
+              "uuid": "0f77533f-a221-4555-aad6-4c6fa91ea78e",
+              "parentUUID": "6bee01e6-5e1d-4988-ac53-62c01d198e25",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify that clicking on the Log out link in the navigation menu logs the user out from the system.",
+              "fullTitle": "Testing home page Verify that clicking on the Log out link in the navigation menu logs the user out from the system.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// click on QA-Test-Tool\ncy.xpath(\"//a[normalize-space()='Log out']\").click();\n// assertion about the URL\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/\");",
+              "err": {},
+              "uuid": "a2516810-87a2-4f6c-9518-da1a8c954209",
+              "parentUUID": "6bee01e6-5e1d-4988-ac53-62c01d198e25",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "verify that the home page includes a footer section with copyright information and a link to the Craft Knowledge website.",
+              "fullTitle": "Testing home page verify that the home page includes a footer section with copyright information and a link to the Craft Knowledge website.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// click on QA-Test-Tool\ncy.xpath(\"//a[@class='link-deco']\").click();\n// assertion about the URL\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/\");",
+              "err": {},
+              "uuid": "a6c6b3b0-ff16-42d9-9f2b-09746fd2583f",
+              "parentUUID": "6bee01e6-5e1d-4988-ac53-62c01d198e25",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "13e13042-0d7f-4c59-9ce1-1688224ec526"
+          ],
+          "pending": [],
+          "skipped": [
+            "af8f86ac-c7c4-4705-9a52-8969790600b7",
+            "00214528-564d-4c2e-aef6-4c4428581728",
+            "05e582b6-29a2-4682-be7f-f7b9fc20bdd4",
+            "0f77533f-a221-4555-aad6-4c6fa91ea78e",
+            "a2516810-87a2-4f6c-9518-da1a8c954209",
+            "a6c6b3b0-ff16-42d9-9f2b-09746fd2583f"
+          ],
+          "duration": 165,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

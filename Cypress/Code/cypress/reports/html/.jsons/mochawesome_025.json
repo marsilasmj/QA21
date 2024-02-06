@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-04T14:08:02.899Z",
+    "end": "2024-02-04T14:08:03.478Z",
+    "duration": 579,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "59ad5f2a-6d5e-4b0d-acdd-7c5fd6839531",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Chapter 2\\cypress_test_stpes.cy.js",
+      "file": "cypress\\e2e\\Chapter 2\\cypress_test_stpes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "27505b43-9399-4858-bd83-4ce69c779c88",
+          "title": "Google home page testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verifying search functionality working",
+              "fullTitle": "Google home page testing verifying search functionality working",
+              "timedOut": null,
+              "duration": 505,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter 2\\\\cypress_test_stpes.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter 2\\\\cypress_test_stpes.cy.js\\\\Google home page testing -- verifying search functionality working (failed) (2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// Testp Step\n// 1. Visiting page\ncy.visit(\"https://www.google.com\");\n// 2. selecting (find) search box\ncy.get(\"#APjFqb\") //\n// 3. intracting with element for type on search box.\n.type(\"cypress tesing tutoria\"); // to type in search box\n// 4. selecting (find) goole search button\ncy.get(\"[name='btnK']\")\n// 5. intracting with element (type, click)\n.click(); // to click on button.\n// 4. assertion.\ncy.url().shuld(\"include\", \"cypress tesing tutorial\");",
+              "err": {
+                "message": "TypeError: cy.url(...).shuld is not a function",
+                "estack": "TypeError: cy.url(...).shuld is not a function\n    at Context.eval (webpack://cypress/./cypress/e2e/Chapter 2/cypress_test_stpes.cy.js:15:13)",
+                "diff": null
+              },
+              "uuid": "4bad6bd9-df3e-489d-b647-22cc2efc1f02",
+              "parentUUID": "27505b43-9399-4858-bd83-4ce69c779c88",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4bad6bd9-df3e-489d-b647-22cc2efc1f02"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 505,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

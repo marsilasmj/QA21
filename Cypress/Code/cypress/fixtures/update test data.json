@@ -1,0 +1,38 @@
+{
+    
+    "test_case1": {
+        "first_name": "1234@34"
+      },
+
+      "test_case2": {
+        "last_name": "12321@@##$"
+      },
+     "test_case3": {
+        "username": "1234@#@ "
+      },
+
+      "test_case4":  {
+        "email": "johnsmithexample.com"
+      },
+
+      "test_case5":  {
+        "phone_number": "123"
+      },
+
+      "test_case6":  {
+        "date_of_birth": "2022-01-01"
+      },
+
+      "test_case7":  {
+        "first_name": "John",
+        "last_name": "Smith",
+        "username": "johnsmith",
+        "email": "johnsmith@example.com",
+        "phone_number": "+1234567890",
+        "date_of_birth": "2022-01-01",
+        "address": "123 Main Street, City, State, Country",
+        "password": "P@ssw0rd",
+        "confirm_password": "P@ssw0rd",
+        "role": "User"
+      }
+}

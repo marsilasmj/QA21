@@ -1,0 +1,178 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2024-02-04T14:08:44.131Z",
+    "end": "2024-02-04T14:08:50.096Z",
+    "duration": 5965,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f357680d-bba9-4df8-b5a5-f19d8461c66f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Project\\Code Optimaztion\\Testing login functinalty .cy.js",
+      "file": "cypress\\e2e\\Project\\Code Optimaztion\\Testing login functinalty .cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "517ce268-b31c-4d0b-bace-b4896831e9b1",
+          "title": "Testing login functinalty ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that a user can successfully log in with valid credentials.",
+              "fullTitle": "Testing login functinalty  Verify that a user can successfully log in with valid credentials.",
+              "timedOut": null,
+              "duration": 955,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Project\\\\Code Optimaztion\\\\Testing login functinalty .cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Project\\\\Code Optimaztion\\\\Testing login functinalty .cy.js\\\\Testing login functinalty -- Verify that a user can successfully log in with valid credentials (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// select and intract with element\ncy.fixture(\"loginTestData\").then(data => {\n  username = data.TestCase1.username;\n  password = data.TestCase1.password;\n  cy.mylogin(username, password);\n});\n// assertion about URL https://end-to-end-v1.onrender.com/home/.\ncy.url().should(\"eq\", \"https://end-to-end-v2.onrender.com/home/\");\n// assertion about element on home page\ncy.get(\"h2\").should(\"exist\");\ncy.get(\"h2\").should(\"be.visible\");\ncy.get(\"h2\").should(\"have.text\", \"Registered Users\");\ncy.get(\"h2\").should(\"exist\").and(\"be.visible\").and(\"have.text\", \"Registered Users\");",
+              "err": {
+                "message": "ReferenceError: username is not defined",
+                "estack": "ReferenceError: username is not defined\n    at Context.eval (webpack://cypress/./cypress/e2e/Project/Code Optimaztion/Testing login functinalty .cy.js:10:16)",
+                "diff": null
+              },
+              "uuid": "d82face2-85bf-44e2-a4b5-422f05a187ff",
+              "parentUUID": "517ce268-b31c-4d0b-bace-b4896831e9b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the system behaber with an invalid username and valid password.",
+              "fullTitle": "Testing login functinalty  Verify that the system behaber with an invalid username and valid password.",
+              "timedOut": null,
+              "duration": 892,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Project\\\\Code Optimaztion\\\\Testing login functinalty .cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Project\\\\Code Optimaztion\\\\Testing login functinalty .cy.js\\\\Testing login functinalty -- Verify that the system behaber with an invalid username and valid password (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// select and intract with element\ncy.fixture(\"loginTestData\").then(data => {\n  username = data.TestCase2.username;\n  password = data.TestCase2.password;\n  cy.mylogin(username, password);\n});\n//assertion about error message stating \"Invalid credentials\"\ncy.xpath(\"//li[@class='error']\").should(\"have.text\", \"Invalid credentials\");\n//assertion about URL https://end-to-end-v1.onrender.com/.\ncy.url().should(\"eq\", \"https://end-to-end-v2.onrender.com/\");",
+              "err": {
+                "message": "ReferenceError: username is not defined",
+                "estack": "ReferenceError: username is not defined\n    at Context.eval (webpack://cypress/./cypress/e2e/Project/Code Optimaztion/Testing login functinalty .cy.js:32:16)",
+                "diff": null
+              },
+              "uuid": "c406ebd2-a6a3-40c5-9c78-836158abf3d7",
+              "parentUUID": "517ce268-b31c-4d0b-bace-b4896831e9b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the system handles invalid login credentials with an invalid password.",
+              "fullTitle": "Testing login functinalty  Verify that the system handles invalid login credentials with an invalid password.",
+              "timedOut": null,
+              "duration": 659,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Project\\\\Code Optimaztion\\\\Testing login functinalty .cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Project\\\\Code Optimaztion\\\\Testing login functinalty .cy.js\\\\Testing login functinalty -- Verify that the system handles invalid login credentials with an invalid password (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// select and intract with element\ncy.fixture(\"loginTestData\").then(data => {\n  username = data.TestCase3.username;\n  password = data.TestCase3.password;\n  cy.mylogin(username, password);\n});\n//assertion about error message stating \"Invalid credentials\"\ncy.xpath(\"//li[@class='error']\").should(\"have.text\", \"Invalid credentials\");\n//assertion about URL https://end-to-end-v1.onrender.com/.\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/\");",
+              "err": {
+                "message": "ReferenceError: username is not defined",
+                "estack": "ReferenceError: username is not defined\n    at Context.eval (webpack://cypress/./cypress/e2e/Project/Code Optimaztion/Testing login functinalty .cy.js:49:16)",
+                "diff": null
+              },
+              "uuid": "28f94d0e-1b35-4a73-a27c-9c88d3504e85",
+              "parentUUID": "517ce268-b31c-4d0b-bace-b4896831e9b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the system handles invalid login credentials with both an invalid username and an invalid password.",
+              "fullTitle": "Testing login functinalty  Verify that the system handles invalid login credentials with both an invalid username and an invalid password.",
+              "timedOut": null,
+              "duration": 854,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Project\\\\Code Optimaztion\\\\Testing login functinalty .cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Project\\\\Code Optimaztion\\\\Testing login functinalty .cy.js\\\\Testing login functinalty -- Verify that the system handles invalid login credentials with both an invalid username and an invalid password (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// visit page\n// select and intract with element\ncy.fixture(\"loginTestData\").then(data => {\n  username = data.TestCase4.username;\n  password = data.TestCase4.password;\n  cy.mylogin(username, password);\n});\n//assertion about error message stating \"Invalid credentials\"\ncy.xpath(\"//li[@class='error']\").should(\"have.text\", \"Invalid credentials\");\n//assertion about URL https://end-to-end-v1.onrender.com/.\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/\");",
+              "err": {
+                "message": "ReferenceError: username is not defined",
+                "estack": "ReferenceError: username is not defined\n    at Context.eval (webpack://cypress/./cypress/e2e/Project/Code Optimaztion/Testing login functinalty .cy.js:66:16)",
+                "diff": null
+              },
+              "uuid": "fcb2d53f-0a49-43ca-8485-d5b8b05ca7a5",
+              "parentUUID": "517ce268-b31c-4d0b-bace-b4896831e9b1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d82face2-85bf-44e2-a4b5-422f05a187ff",
+            "c406ebd2-a6a3-40c5-9c78-836158abf3d7",
+            "28f94d0e-1b35-4a73-a27c-9c88d3504e85",
+            "fcb2d53f-0a49-43ca-8485-d5b8b05ca7a5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3360,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-04T14:02:43.640Z",
+    "end": "2024-02-04T14:02:50.899Z",
+    "duration": 7259,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9992aa1f-6338-4782-95da-09abb576ee0a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Chapter 4\\Radio Button.cy.js",
+      "file": "cypress\\e2e\\Chapter 4\\Radio Button.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "846684d4-921e-4865-acc5-ac4aa323260a",
+          "title": "Radio Button Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should select a radio button",
+              "fullTitle": "Radio Button Tests should select a radio button",
+              "timedOut": null,
+              "duration": 2251,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Chapter 4\\\\Radio Button.cy.js\"\n}",
+              "code": "cy.visit('https://html-element-for-testing.onrender.com/Radio_button.html');\ncy.get('.form-check-input').first().check();\ncy.get('.form-check-input').first().should('be.checked');",
+              "err": {},
+              "uuid": "2bc654c6-89fe-44e8-b037-2acbb8c8c38c",
+              "parentUUID": "846684d4-921e-4865-acc5-ac4aa323260a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should verify only one radio button can be selected at a time",
+              "fullTitle": "Radio Button Tests should verify only one radio button can be selected at a time",
+              "timedOut": null,
+              "duration": 1852,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Chapter 4\\\\Radio Button.cy.js\"\n}",
+              "code": "cy.visit('https://html-element-for-testing.onrender.com/Radio_button.html');\ncy.get('.form-check-input').eq(0).check();\ncy.get('.form-check-input').eq(0).should('be.checked');\ncy.get('.form-check-input').eq(1).check();\ncy.get('.form-check-input').eq(0).should('not.be.checked');\ncy.get('.form-check-input').eq(1).should('be.checked');\ncy.get('.form-check-input').eq(2).check();\ncy.get('.form-check-input').eq(1).should('not.be.checked');\ncy.get('.form-check-input').eq(2).should('be.checked');",
+              "err": {},
+              "uuid": "6f90275e-ee78-4e9a-aa14-9db50211cb0d",
+              "parentUUID": "846684d4-921e-4865-acc5-ac4aa323260a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2bc654c6-89fe-44e8-b037-2acbb8c8c38c",
+            "6f90275e-ee78-4e9a-aa14-9db50211cb0d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4103,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,9 +1,19 @@
 const { defineConfig } = require("cypress");
 module.exports = defineConfig({
-  e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-     //baseUrl : "https://craftknowledge.net/"
+reporter: 'cypress-mochawesome-reporter',
+video: true,
+
+e2e: {
+  setupNodeEvents(on, config) {
+    require('cypress-mochawesome-reporter/plugin')(on);
+  },
+     
+  "env" : {
+    "URL": "https://end-to-end-v0.onrender.com/"
+  }
+  //baseUrl : "https://craftknowledge.net/"
+    
+  //projectId: "f7wvk6",
+     
   },
 });

@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-02-04T14:03:44.585Z",
+    "end": "2024-02-04T14:04:00.964Z",
+    "duration": 16379,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "535acf59-bda3-4337-a9a7-3d55949139e7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Chapter 4\\Text Verification.cy.js",
+      "file": "cypress\\e2e\\Chapter 4\\Text Verification.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7ee91619-41b8-4487-a3ff-8f12ae2078b5",
+          "title": "Testing html element",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Text verification using should",
+              "fullTitle": "Testing html element Text verification using should",
+              "timedOut": null,
+              "duration": 9510,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter 4\\\\Text Verification.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter 4\\\\Text Verification.cy.js\\\\Testing html element -- Text verification using should (failed) (3).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit(\"https://html-element-for-testing.onrender.com/index.html\");\ncy.get(\"#text\").should(\"exist\").and(\"be.visible\").and(\"have.text\", \"This is QA calss at Craft\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<h1#text>' to have text 'This is QA calss at Craft', but the text was 'This is QA Class at Craft'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<h1#text>' to have text 'This is QA calss at Craft', but the text was 'This is QA Class at Craft'\n    at Context.eval (webpack://cypress/./cypress/e2e/Chapter 4/Text Verification.cy.js:7:7)",
+                "diff": "- 'This is QA Class at Craft'\n+ 'This is QA calss at Craft'\n"
+              },
+              "uuid": "81b9ace5-7e46-4c67-9d6a-a4ac44e25110",
+              "parentUUID": "7ee91619-41b8-4487-a3ff-8f12ae2078b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Text verification using expect",
+              "fullTitle": "Testing html element Text verification using expect",
+              "timedOut": null,
+              "duration": 3478,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter 4\\\\Text Verification.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter 4\\\\Text Verification.cy.js\\\\Testing html element -- Text verification using expect (failed) (3).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit(\"https://html-element-for-testing.onrender.com/index.html\");\ncy.get(\"#text\").then(e => {\n  const t = e.text();\n  expect(t).to.contains(\"This is QA calss at Craft\");\n});",
+              "err": {
+                "message": "AssertionError: expected 'This is QA Class at Craft' to include 'This is QA calss at Craft'",
+                "estack": "AssertionError: expected 'This is QA Class at Craft' to include 'This is QA calss at Craft'\n    at Context.eval (webpack://cypress/./cypress/e2e/Chapter 4/Text Verification.cy.js:14:19)",
+                "diff": null
+              },
+              "uuid": "dc385b0f-0e00-4cda-92d9-625b7b5529a6",
+              "parentUUID": "7ee91619-41b8-4487-a3ff-8f12ae2078b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "81b9ace5-7e46-4c67-9d6a-a4ac44e25110",
+            "dc385b0f-0e00-4cda-92d9-625b7b5529a6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12988,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

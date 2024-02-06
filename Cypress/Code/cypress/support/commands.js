@@ -1,25 +1,31 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import LoginPage from "./pageObjects/LoginPage";
+import RegistrationPage from "./pageObjects/Registration"
+
+
+
+Cypress.Commands.add('mylogin',(username,password)=>{
+  LoginPage.username(username)
+  LoginPage.Password(password)
+  LoginPage.submit()
+})
+
+
+Cypress.Commands.add("myRegistration",(fname,lname,username,email,phone,dob,address,password1,password2,Role
+  )=>{
+
+    RegistrationPage.FirstName(fname)
+    RegistrationPage.LastName(lname)
+    RegistrationPage.Username(username)
+    RegistrationPage.Email(email)
+    RegistrationPage.Phone(phone)
+    RegistrationPage.DateOfBirth(dob)
+    RegistrationPage.Address(address)
+    RegistrationPage.Password(password1)
+    RegistrationPage.ConfirmPassword(password2)
+    RegistrationPage.selectRole(Role)
+    RegistrationPage.submit(Role)
+  
+})
+
+
+

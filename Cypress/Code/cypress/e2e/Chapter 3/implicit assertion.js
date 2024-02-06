@@ -1,43 +1,76 @@
+describe("implicit assertion", () => {
+  it("Positave assertion on URL", () => {
+    // visity home page
+    cy.visit("https://end-to-end-v1.onrender.com/");
 
-describe ('implicit assertion', () => {
-    it('using should', () =>
-         {
+    cy.get("#username").type("testuserq");
+    cy.get("#password").type("test");
+    cy.get("button").click();
 
-            cy.visit('http://127.0.0.1:5500/project/form.html')
+    // 1. positave assertion on URL
 
-             // 1. positave assertion
+    cy.url().should("eq", "https://end-to-end-v1.onrender.com/home/");
+  });
 
-            cy.url().should('include','project')
-            cy.url().should('contain','127')
-            cy.url().should('eq','http://127.0.0.1:5500/project/form.html')
+  it("Short form of should", () => {
+    // visity home page
+    cy.visit("https://end-to-end-v1.onrender.com/");
 
-            cy.url()
+    cy.get("#username").type("testuserq");
+    cy.get("#password").type("test");
+    cy.get("button").click();
 
-             // 2. Short form of should()
-          
-           cy.url().should('include','project')
-           .should('contain','project')
-           .should('eq','http://127.0.0.1:5500/project/form.html')
+    cy.url()
+      .should("include", "https://end-to-end-v1.onrender.com/home/")
+      .should("contain", "https://end-to-end-v1.onrender.com/home/")
+      .should("eq", "https://end-to-end-v1.onrender.com/home/");
+  });
 
-             // 3. should with and
-              
-           cy.url().should('include','project')
-           .and('contain','project')
-           .and('eq','http://127.0.0.1:5500/project/form.html')
-             
-           // 4. negative assertion
-                
-           cy.url().should('not.include','prsdject')
-           .and('not.contain','prsdfoject')
-           .and('not.eq','http://127.0.0.1:5500/psdroject/form.html')
-           
-           // 5. checking visiblity and existance
-             
-           cy.get('h1.text-center').should('be.visible')
-           .and('exist')
-           cy.get('#button').should('be.visible')
-           .and('exist')
-     
-        })
-})
+  it("should with and", () => {
+    // visity home page
+    cy.visit("https://end-to-end-v1.onrender.com/");
 
+    cy.get("#username").type("testuserq");
+    cy.get("#password").type("test");
+    cy.get("button").click();
+
+    // 3. should with and
+
+    cy.url()
+      .should("include", "https://end-to-end-v1.onrender.com/home/")
+      .and("contain", "https://end-to-end-v1.onrender.com/home/")
+      .and("eq", "https://end-to-end-v1.onrender.com/home/");
+  });
+
+  it("Negative assertion", () => {
+    // visity home page
+    cy.visit("https://end-to-end-v1.onrender.com/");
+
+    cy.get("#username").type("testuserq");
+    cy.get("#password").type("test");
+    cy.get("button").click();
+
+    // 4. negative assertion
+
+    cy.url()
+      .should("not.include", "https://end-to-end-v1.onrender.com/home/")
+      .and("not.contain", "https://end-to-end-v1.onrender.com/home/")
+      .and("not.eq", "https://end-to-end-v1.onrender.com/home/");
+  });
+
+  it("Checking visiblity and existance", () => {
+    // visity home page
+    cy.visit("https://end-to-end-v1.onrender.com/");
+
+    cy.get("#username").type("testuserq");
+    cy.get("#password").type("test");
+    cy.get("button").click();
+
+    // 5. checking visiblity and existance
+
+    cy.get("h2")
+      .should("be.visible")
+      .and("exist")
+      .and("contain", "Registered Users");
+  });
+});

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-04T14:03:06.143Z",
+    "end": "2024-02-04T14:03:11.931Z",
+    "duration": 5788,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7bcf8ea4-d3d1-4257-bc87-2e339303716c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Chapter 4\\Table.cy.js",
+      "file": "cypress\\e2e\\Chapter 4\\Table.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a952e0e2-9703-44e5-9309-c1dc4f75a287",
+          "title": "Table Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display the correct data in the table",
+              "fullTitle": "Table Test should display the correct data in the table",
+              "timedOut": null,
+              "duration": 3324,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Chapter 4\\\\Table.cy.js\"\n}",
+              "code": "cy.visit(\"https://html-element-for-testing.onrender.com/Table.html\");\ncy.get('#table-body tr').eq(0).find('td').eq(0).should('have.text', '1');\ncy.get('#table-body tr').eq(0).find('td').eq(1).should('have.text', 'Brandon Jacob');\ncy.get('#table-body tr').eq(0).find('td').eq(2).should('have.text', 'Designer');\ncy.get('#table-body tr').eq(0).find('td').eq(3).should('have.text', '28');",
+              "err": {},
+              "uuid": "2709d7bc-ca21-482c-b059-b30b9f6745e8",
+              "parentUUID": "a952e0e2-9703-44e5-9309-c1dc4f75a287",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2709d7bc-ca21-482c-b059-b30b9f6745e8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3324,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

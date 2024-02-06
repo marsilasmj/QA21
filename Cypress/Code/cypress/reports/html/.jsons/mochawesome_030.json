@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-04T14:08:28.357Z",
+    "end": "2024-02-04T14:08:32.082Z",
+    "duration": 3725,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "87cee400-c721-4510-9647-b7ec75e6c2fa",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Project\\Code Optimaztion\\Logout Functionality.cy.js",
+      "file": "cypress\\e2e\\Project\\Code Optimaztion\\Logout Functionality.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9c4845ad-f125-4a0b-b382-dd05aa24f16b",
+          "title": "Logout Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that the system successfully  logout",
+              "fullTitle": "Logout Functionality Verify that the system successfully  logout",
+              "timedOut": null,
+              "duration": 1320,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Project\\\\Code Optimaztion\\\\Logout Functionality.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Project\\\\Code Optimaztion\\\\Logout Functionality.cy.js\\\\Logout Functionality -- Verify that the system successfully  logout (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "//1. visit\ncy.visit('https://end-to-end-v1.onrender.com/');\n// 2. select element and 3. intract with element\ncy.fixture(\"loginTestData\").then(data => {\n  username = data.TestCase1.username;\n  password = data.TestCase1.password;\n  cy.mylogin(username, password);\n});\n// 4. Assertion \ncy.url().should('eq', 'https://end-to-end-v1.onrender.com/home/');\n// logout from system \ncy.xpath(\"//a[normalize-space()='Log out']\").click();\n// 4. Assertion \ncy.url().should('eq', 'https://end-to-end-v1.onrender.com/');",
+              "err": {
+                "message": "ReferenceError: username is not defined",
+                "estack": "ReferenceError: username is not defined\n    at Context.eval (webpack://cypress/./cypress/e2e/Project/Code Optimaztion/Logout Functionality.cy.js:8:20)",
+                "diff": null
+              },
+              "uuid": "57857c1d-aafc-4ed5-9d4f-156774a4bfdb",
+              "parentUUID": "9c4845ad-f125-4a0b-b382-dd05aa24f16b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "57857c1d-aafc-4ed5-9d4f-156774a4bfdb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1320,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

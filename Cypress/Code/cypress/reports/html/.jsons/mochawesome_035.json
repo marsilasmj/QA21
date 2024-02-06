@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-04T14:09:19.995Z",
+    "end": "2024-02-04T14:09:20.372Z",
+    "duration": 377,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14d21777-d4d9-4889-aead-83269fe0d61d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Project\\Normial Approch\\Testing Delete functionality.cy.js",
+      "file": "cypress\\e2e\\Project\\Normial Approch\\Testing Delete functionality.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "14282c3d-aa4e-48ee-a06c-b5ecc43c54ce",
+          "title": "testing view page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "This test case verifies that only authenticated users can access the user detail page",
+              "fullTitle": "testing view page This test case verifies that only authenticated users can access the user detail page",
+              "timedOut": null,
+              "duration": 53,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Project\\\\Normial Approch\\\\Testing Delete functionality.cy.js\"\n}",
+              "code": "",
+              "err": {},
+              "uuid": "31e17dbf-3a37-438b-9681-51e2cb9271c9",
+              "parentUUID": "14282c3d-aa4e-48ee-a06c-b5ecc43c54ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify that the user detail page correctly displays the user's information, including their full name, username, email, role, date of birth, and address.",
+              "fullTitle": "testing view page verify that the user detail page correctly displays the user's information, including their full name, username, email, role, date of birth, and address.",
+              "timedOut": null,
+              "duration": 25,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Project\\\\Normial Approch\\\\Testing Delete functionality.cy.js\"\n}",
+              "code": "",
+              "err": {},
+              "uuid": "a6e46835-b02c-4e68-b383-bd8c2233789e",
+              "parentUUID": "14282c3d-aa4e-48ee-a06c-b5ecc43c54ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "This test case verifies that clicking on the QA-Test-Tool link in the navigation menu navigates the user to the home page.",
+              "fullTitle": "testing view page This test case verifies that clicking on the QA-Test-Tool link in the navigation menu navigates the user to the home page.",
+              "timedOut": null,
+              "duration": 20,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Project\\\\Normial Approch\\\\Testing Delete functionality.cy.js\"\n}",
+              "code": "",
+              "err": {},
+              "uuid": "83e397b1-1fa0-46af-a5eb-df9d2f6bf266",
+              "parentUUID": "14282c3d-aa4e-48ee-a06c-b5ecc43c54ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "This test case verifies that only authenticated users can access the user detail page",
+              "fullTitle": "testing view page This test case verifies that only authenticated users can access the user detail page",
+              "timedOut": null,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Project\\\\Normial Approch\\\\Testing Delete functionality.cy.js\"\n}",
+              "code": "",
+              "err": {},
+              "uuid": "fa7d6c55-3b08-43fa-a950-331ce6313363",
+              "parentUUID": "14282c3d-aa4e-48ee-a06c-b5ecc43c54ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "This test case ensures that clicking on the Log out link in the navigation menu allows the user to log out from the system.",
+              "fullTitle": "testing view page This test case ensures that clicking on the Log out link in the navigation menu allows the user to log out from the system.",
+              "timedOut": null,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Project\\\\Normial Approch\\\\Testing Delete functionality.cy.js\"\n}",
+              "code": "",
+              "err": {},
+              "uuid": "3be8aebc-08e9-4409-b74b-032df36191a5",
+              "parentUUID": "14282c3d-aa4e-48ee-a06c-b5ecc43c54ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify that the home page includes a footer section with copyright information and a link to the Craft Knowledge website.",
+              "fullTitle": "testing view page verify that the home page includes a footer section with copyright information and a link to the Craft Knowledge website.",
+              "timedOut": null,
+              "duration": 22,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Project\\\\Normial Approch\\\\Testing Delete functionality.cy.js\"\n}",
+              "code": "",
+              "err": {},
+              "uuid": "034f65e2-d839-4db4-9724-0461114ebc5b",
+              "parentUUID": "14282c3d-aa4e-48ee-a06c-b5ecc43c54ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "31e17dbf-3a37-438b-9681-51e2cb9271c9",
+            "a6e46835-b02c-4e68-b383-bd8c2233789e",
+            "83e397b1-1fa0-46af-a5eb-df9d2f6bf266",
+            "fa7d6c55-3b08-43fa-a950-331ce6313363",
+            "3be8aebc-08e9-4409-b74b-032df36191a5",
+            "034f65e2-d839-4db4-9724-0461114ebc5b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 163,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

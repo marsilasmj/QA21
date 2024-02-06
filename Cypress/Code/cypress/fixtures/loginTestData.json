@@ -1,0 +1,22 @@
+{
+  "TestCase1": {
+    "username": "testuserq",
+    "password": "test"
+  },
+
+  "TestCase2": {
+    "username": "username",
+    "password": "test"
+  },
+
+  "TestCase3": {
+    "username": "testuserq",
+    "password": "password"
+  },
+  
+  "TestCase4": {
+    "username": "username",
+    "password": "password"
+  }
+}
+

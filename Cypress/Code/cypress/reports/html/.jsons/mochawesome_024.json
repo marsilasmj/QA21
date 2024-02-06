@@ -1,0 +1,194 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 2,
+    "pending": 0,
+    "failures": 3,
+    "start": "2024-02-04T14:07:33.215Z",
+    "end": "2024-02-04T14:07:58.711Z",
+    "duration": 25496,
+    "testsRegistered": 5,
+    "passPercent": 40,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5a2ba396-b9f1-4b99-9191-99d2ad9b0fdb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Chapter 3\\xpath_selectors.cy.js",
+      "file": "cypress\\e2e\\Chapter 3\\xpath_selectors.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20921081-0738-4dd6-b6ae-560a5eae5d6f",
+          "title": "end-to-end xpath selector",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login page",
+              "fullTitle": "end-to-end xpath selector login page",
+              "timedOut": null,
+              "duration": 681,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Chapter 3\\\\xpath_selectors.cy.js\"\n}",
+              "code": "// visit login page\ncy.visit(\"https://end-to-end-v1.onrender.com/\");\n// Element on login page\ncy.xpath(\"//input[@id='username']\");\ncy.xpath(\"//input[@id='password']\");\ncy.xpath(\"//button[@type='submit']\");",
+              "err": {},
+              "uuid": "d678d660-adf9-412a-917f-c50e9033e6ee",
+              "parentUUID": "20921081-0738-4dd6-b6ae-560a5eae5d6f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "registration page",
+              "fullTitle": "end-to-end xpath selector registration page",
+              "timedOut": null,
+              "duration": 691,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Chapter 3\\\\xpath_selectors.cy.js\"\n}",
+              "code": "// visit regstratio page\ncy.visit(\"https://end-to-end-v1.onrender.com/registration/\");\n// Element on registration page\ncy.xpath(\"//input[@id='first_name']\");\ncy.xpath(\"//input[@id='last_name']\");\ncy.xpath(\"//input[@id='username']\");\ncy.xpath(\"//input[@id='email']\");\ncy.xpath(\"//input[@id='phone']\");\ncy.xpath(\"//input[@id='date_of_birth']\");\ncy.xpath(\"//textarea[@id='address']\");\ncy.xpath(\"//input[@id='password1']\");\ncy.xpath(\"//input[@id='confirm-password']\");\ncy.xpath(\"//select[@id='role']\");",
+              "err": {},
+              "uuid": "a1ef8038-02b2-4c7e-b75a-1e30e77d776b",
+              "parentUUID": "20921081-0738-4dd6-b6ae-560a5eae5d6f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "home page",
+              "fullTitle": "end-to-end xpath selector home page",
+              "timedOut": null,
+              "duration": 6782,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter 3\\\\xpath_selectors.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter 3\\\\xpath_selectors.cy.js\\\\end-to-end xpath selector -- home page (failed) (2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// visit login page\ncy.visit(\"https://end-to-end-v1.onrender.com/\");\n// Element on login page\ncy.xpath(\"//input[@id='username']\").type(\"testuserq\");\ncy.xpath(\"//input[@id='password']\").type(\"user\");\ncy.xpath(\"//button[@type='submit']\").click();\n// Element on home page\ncy.xpath(\"//a[normalize-space()='QA-Test-Tool']\");\ncy.xpath(\"//a[normalize-space()='Log out']\");\ncy.xpath(\"//h2[normalize-space()='Registered Users']\");\ncy.xpath(\"//th[normalize-space()='Username']\");\ncy.xpath(\"//th[normalize-space()='Email']\");\ncy.xpath(\"//th[normalize-space()='Role']\");\ncy.xpath(\"//tbody/tr[1]/td[4]/a[1]\");\ncy.xpath(\"//tbody/tr[1]/td[5]/a[1]\");\ncy.xpath(\"//tbody/tr[1]/td[6]/a[1]\");\ncy.xpath(\"//a[@class='link-deco']\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//a[normalize-space()='QA-Test-Tool']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//a[normalize-space()='QA-Test-Tool']`, but never found it.\n    at Context.eval (webpack://cypress/./cypress/e2e/Chapter 3/xpath_selectors.cy.js:42:7)",
+                "diff": null
+              },
+              "uuid": "9a2b3fb1-eddf-4eae-b37b-e089d480e913",
+              "parentUUID": "20921081-0738-4dd6-b6ae-560a5eae5d6f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "View page",
+              "fullTitle": "end-to-end xpath selector View page",
+              "timedOut": null,
+              "duration": 7020,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter 3\\\\xpath_selectors.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter 3\\\\xpath_selectors.cy.js\\\\end-to-end xpath selector -- View page (failed) (2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// visit login page\ncy.visit(\"https://end-to-end-v1.onrender.com/\");\n// Element on login page\ncy.xpath(\"//input[@id='username']\").type(\"testuserq\");\ncy.xpath(\"//input[@id='password']\").type(\"user\");\ncy.xpath(\"//button[@type='submit']\").click();\n// Element on home page and click on view option from table\ncy.xpath(\"//tbody/tr[1]/td[4]/a[1]\").click();\n// Element on View Page\ncy.xpath(\"//div[1]//span[1]\");\ncy.xpath(\"//div[2]//span[1]\");\ncy.xpath(\"//span[@id='email']\");\ncy.xpath(\"//span[@id='role']\");\ncy.xpath(\"//span[@id='dob']\");\ncy.xpath(\"//span[@id='address']\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//tbody/tr[1]/td[4]/a[1]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//tbody/tr[1]/td[4]/a[1]`, but never found it.\n    at Context.eval (webpack://cypress/./cypress/e2e/Chapter 3/xpath_selectors.cy.js:68:7)",
+                "diff": null
+              },
+              "uuid": "b6cf3736-52f8-4579-b2b9-70a173a86adc",
+              "parentUUID": "20921081-0738-4dd6-b6ae-560a5eae5d6f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Update page",
+              "fullTitle": "end-to-end xpath selector Update page",
+              "timedOut": null,
+              "duration": 8177,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter 3\\\\xpath_selectors.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter 3\\\\xpath_selectors.cy.js\\\\end-to-end xpath selector -- Update page (failed) (2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "// visit login page\ncy.visit(\"https://end-to-end-v1.onrender.com/\");\n// Element on login page\ncy.xpath(\"//input[@id='username']\").type(\"testuserq\");\ncy.xpath(\"//input[@id='password']\").type(\"user\");\ncy.xpath(\"//button[@type='submit']\").click();\n// Element on home page and click on update option from table\ncy.xpath(\"//tbody/tr[1]/td[5]/a[1]\").click();\n// Element on Update Page\ncy.xpath(\"//div[1]//input[1]\");\ncy.xpath(\"//div[2]//input[1]\");\ncy.xpath(\"//input[@id='email']\");\ncy.xpath(\"//input[@id='phone']\");\ncy.xpath(\"//input[@id='date_of_birth']\");\ncy.xpath(\"//textarea[@id='address']\");\ncy.xpath(\"//select[@id='role']\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//tbody/tr[1]/td[5]/a[1]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//tbody/tr[1]/td[5]/a[1]`, but never found it.\n    at Context.eval (webpack://cypress/./cypress/e2e/Chapter 3/xpath_selectors.cy.js:92:7)",
+                "diff": null
+              },
+              "uuid": "7117a311-0073-47fd-b73b-fa0f8c9411aa",
+              "parentUUID": "20921081-0738-4dd6-b6ae-560a5eae5d6f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d678d660-adf9-412a-917f-c50e9033e6ee",
+            "a1ef8038-02b2-4c7e-b75a-1e30e77d776b"
+          ],
+          "failures": [
+            "9a2b3fb1-eddf-4eae-b37b-e089d480e913",
+            "b6cf3736-52f8-4579-b2b9-70a173a86adc",
+            "7117a311-0073-47fd-b73b-fa0f8c9411aa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 23351,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2024-02-04T14:04:16.769Z",
+    "end": "2024-02-04T14:04:25.424Z",
+    "duration": 8655,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "33f45779-667b-4a1f-a5e4-489a5392398b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Chapter5\\Custom Commands in Cypress.cy.js",
+      "file": "cypress\\e2e\\Chapter5\\Custom Commands in Cypress.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "77221c01-5cad-43e7-b787-8b5432c8239b",
+          "title": "this is hook ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that a user can successfully log in with valid credentials.",
+              "fullTitle": "this is hook  Verify that a user can successfully log in with valid credentials.",
+              "timedOut": null,
+              "duration": 1498,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter5\\\\Custom Commands in Cypress.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter5\\\\Custom Commands in Cypress.cy.js\\\\this is hook -- Verify that a user can successfully log in with valid credentials (failed) (2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.fixture(\"loginTestData\").then(data => {\n  const mylogin_data = data.Testcase1;\n  cy.mylogin(mylogin_data.username, mylogin_data.passowrd);\n});\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/home/\");\ncy.get(\"h2\").should(\"exist\");\ncy.get(\"h2\").should(\"be.visible\");\ncy.get(\"h2\").should(\"have.text\", \"Registered Users\");\ncy.get(\"h2\").should(\"exist\").and(\"be.visible\").and(\"have.text\", \"Registered Users\");",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'username')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'username')\n    at Context.eval (webpack://cypress/./cypress/e2e/Chapter5/Custom Commands in Cypress.cy.js:11:30)",
+                "diff": null
+              },
+              "uuid": "d0fe2611-bdd6-4775-be9a-61f611a100e7",
+              "parentUUID": "77221c01-5cad-43e7-b787-8b5432c8239b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the system behaber with an invalid username and valid password.",
+              "fullTitle": "this is hook  Verify that the system behaber with an invalid username and valid password.",
+              "timedOut": null,
+              "duration": 1054,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter5\\\\Custom Commands in Cypress.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter5\\\\Custom Commands in Cypress.cy.js\\\\this is hook -- Verify that the system behaber with an invalid username and valid password (failed) (2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.fixture(\"examplelog\").then(data => {\n  const logindata = data.testcase2;\n  cy.mylogin(\"username\", \"test\");\n});\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/\");",
+              "err": {
+                "message": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\examplelog\n    > cypress\\fixtures\\examplelog.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.",
+                "estack": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\examplelog\n    > cypress\\fixtures\\examplelog.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n    at Object.<anonymous> (<embedded>:4436:121481)\n    at Object.tryCatcher (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:694:18)\n    at Promise._fulfill (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at <unknown> (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\nodeback.js:42:21)\n    at s (<embedded>:1832:64795)\n    at E.<anonymous> (<embedded>:4436:111271)\n    at E.emit (node:events:513:28)\n    at E._finish (<embedded>:4436:112138)\n    at d (<embedded>:4436:111534)\n    at E._processSimple2 (<embedded>:4436:117295)\n    at <unknown> (<embedded>:4436:117148)\n    at E._stat2 (<embedded>:4436:118213)\n    at <unknown> (<embedded>:4436:118060)\n    at s (<embedded>:2904:19687)\n    at s (<embedded>:1832:64795)\n    at r (<embedded>:4533:13485)\n    at FSReqCallback.oncomplete (node:fs:208:21)",
+                "diff": null
+              },
+              "uuid": "3cbcfbd3-6845-4e91-ad35-cb6d313ea4d6",
+              "parentUUID": "77221c01-5cad-43e7-b787-8b5432c8239b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the system handles invalid login credentials with an invalid password.",
+              "fullTitle": "this is hook  Verify that the system handles invalid login credentials with an invalid password.",
+              "timedOut": null,
+              "duration": 986,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter5\\\\Custom Commands in Cypress.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter5\\\\Custom Commands in Cypress.cy.js\\\\this is hook -- Verify that the system handles invalid login credentials with an invalid password (failed) (2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.fixture(\"examplelog\").then(data => {\n  const logindata = data.testcase3;\n  cy.mylogin(logindata.Valid_Username, logindata.invalid_Password);\n});\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/\");",
+              "err": {
+                "message": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\examplelog\n    > cypress\\fixtures\\examplelog.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.",
+                "estack": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\examplelog\n    > cypress\\fixtures\\examplelog.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n    at Object.<anonymous> (<embedded>:4436:121481)\n    at Object.tryCatcher (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:694:18)\n    at Promise._fulfill (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at <unknown> (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\nodeback.js:42:21)\n    at s (<embedded>:1832:64795)\n    at E.<anonymous> (<embedded>:4436:111271)\n    at E.emit (node:events:513:28)\n    at E._finish (<embedded>:4436:112138)\n    at d (<embedded>:4436:111534)\n    at E._processSimple2 (<embedded>:4436:117295)\n    at <unknown> (<embedded>:4436:117148)\n    at E._stat2 (<embedded>:4436:118213)\n    at <unknown> (<embedded>:4436:118060)\n    at s (<embedded>:2904:19687)\n    at s (<embedded>:1832:64795)\n    at r (<embedded>:4533:13485)\n    at FSReqCallback.oncomplete (node:fs:208:21)",
+                "diff": null
+              },
+              "uuid": "a4f6ecdf-874f-4ca4-a799-ed4abf58a414",
+              "parentUUID": "77221c01-5cad-43e7-b787-8b5432c8239b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that the system handles invalid login credentials with both an invalid username and an invalid password.",
+              "fullTitle": "this is hook  Verify that the system handles invalid login credentials with both an invalid username and an invalid password.",
+              "timedOut": null,
+              "duration": 668,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Chapter5\\\\Custom Commands in Cypress.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Chapter5\\\\Custom Commands in Cypress.cy.js\\\\this is hook -- Verify that the system handles invalid login credentials with both an invalid username and an invalid password (failed) (2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.fixture(\"examplelog\").then(data => {\n  const logindata = data.testcase4;\n  cy.mylogin(logindata.invalid_Username, logindata.invalid_Password);\n});\ncy.url().should(\"eq\", \"https://end-to-end-v1.onrender.com/\");",
+              "err": {
+                "message": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\examplelog\n    > cypress\\fixtures\\examplelog.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.",
+                "estack": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\examplelog\n    > cypress\\fixtures\\examplelog.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n    at Object.<anonymous> (<embedded>:4436:121481)\n    at Object.tryCatcher (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:694:18)\n    at Promise._fulfill (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at <unknown> (C:\\Users\\efrem\\AppData\\Local\\Cypress\\Cache\\13.6.2\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\nodeback.js:42:21)\n    at s (<embedded>:1832:64795)\n    at E.<anonymous> (<embedded>:4436:111271)\n    at E.emit (node:events:513:28)\n    at E._finish (<embedded>:4436:112138)\n    at d (<embedded>:4436:111534)\n    at E._processSimple2 (<embedded>:4436:117295)\n    at <unknown> (<embedded>:4436:117148)\n    at E._stat2 (<embedded>:4436:118213)\n    at <unknown> (<embedded>:4436:118060)\n    at s (<embedded>:2904:19687)\n    at s (<embedded>:1832:64795)\n    at r (<embedded>:4533:13485)\n    at FSReqCallback.oncomplete (node:fs:208:21)",
+                "diff": null
+              },
+              "uuid": "66fab2e3-afd9-4b62-a375-9324b349e52f",
+              "parentUUID": "77221c01-5cad-43e7-b787-8b5432c8239b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d0fe2611-bdd6-4775-be9a-61f611a100e7",
+            "3cbcfbd3-6845-4e91-ad35-cb6d313ea4d6",
+            "a4f6ecdf-874f-4ca4-a799-ed4abf58a414",
+            "66fab2e3-afd9-4b62-a375-9324b349e52f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4206,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
