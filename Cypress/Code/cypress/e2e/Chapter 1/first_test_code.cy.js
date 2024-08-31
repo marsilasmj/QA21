@@ -6,4 +6,4 @@ describe("Test Suite name", function () {
     // 3. intracting with element for type on search box
     // 4. assertion.
   });
-});
+});// i made a change
